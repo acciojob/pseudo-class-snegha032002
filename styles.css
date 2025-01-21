@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Styling for the container */
+#container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    position: relative;
+}
+
+/* Pseudo-element for content before the container */
+#container::before {
+    content: "Before Content";
+    display: block;
+    color: #f00; /* Red color */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Pseudo-element for content after the container */
+#container::after {
+    content: "After Content";
+    display: block;
+    color: #f00; /* Red color */
+    font-size: 20px;
+    margin-top: 10px;
+}
