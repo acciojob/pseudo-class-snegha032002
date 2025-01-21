@@ -19,8 +19,7 @@ body {
 
 /* Pseudo-element for content before the container */
 #container::before {
-    content: "Before Content";
-    display: block;
+    content: "Before Element";
     color: #f00; /* Red color */
     font-size: 20px;
     margin-bottom: 10px;
@@ -28,9 +27,9 @@ body {
 
 /* Pseudo-element for content after the container */
 #container::after {
-    content: "After Content";
-    display: block;
+    content: "After Element";
+   margin-bottom: 10px;
     color: #f00; /* Red color */
     font-size: 20px;
-    margin-top: 10px;
+    
 }
