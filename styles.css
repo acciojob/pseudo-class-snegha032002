@@ -8,20 +8,14 @@ body {
     color: #333333;
 }
 
-/* Styling for the container */
-#container {
-    margin: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #cccccc;
-    position: relative;
-}
+
 
 /* Pseudo-element for content before the container */
 #container::before {
     content: "Before Element";
     color: #f00; /* Red color */
     font-size: 20px;
+	padding: 10px;
     margin-bottom: 10px;
 }
 
