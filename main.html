@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo-Elements Example</title>
-	<link rel="stylesheet" href="styles.css">
+    <title>Before and After Elements</title>
+    <style>
+        #container {
+            margin: 20px;
+            font-size: 16px;
+        }
+        #container::before {
+            content: "Before Element";
+            color: #f00;
+            font-size: 20px;
+        }
+        #container::after {
+            content: "After Element";
+            color: #f00;
+            font-size: 20px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="container">
-        This is the main content of the container
-    </div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div id="container">This is the main container element</div>
 </body>
-
 </html>
